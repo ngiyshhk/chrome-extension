@@ -1,6 +1,6 @@
 var allRead = function(){$("#_roomListItems > li").has("li._unreadBadge").each(function(i, o){o.click()});};
 var sample = function(){
-  var user = $(".mainContent p._speakerName.chatName:last > span");
+  var user = $(".mainContent p._speakerName.chatName > span:last");
 
   var id = user.attr("class").replace(/[^\d]/g, "");
   var name = user.text();
