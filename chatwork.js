@@ -5,7 +5,7 @@ var sample = function(){
   var id = user.attr("class").replace(/[^\d]/g, "");
   var name = user.text();
 
-  var header = "[To:" + id + "]" + name + "さん\n";
+  var header = "[To:" + id + "] " + name + "さん\n";
   var message = "サンプル添付いたします。\nご確認よろしくお願いいたします。";
   $("#_chatText").val(header + message).change();
 };
