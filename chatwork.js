@@ -9,7 +9,9 @@ var sample = function(){
   var message = "サンプル添付いたします。\nご確認よろしくお願いいたします。";
   $("#_chatText").val(header + message).change();
 };
+var clearMes = function(){$("#_chatText").val("").change();};
 
 $("#_chatSendToolbar")
   .append('<input type="button" value="全既読" onClick="allRead()"/>')
-  .append('<input type="button" value="サンプル" onClick="sample()"/>');
+  .append('<input type="button" value="サンプル" onClick="sample()"/>')
+  .append('<input type="button" value="クリア" onClick="clearMes()"/>');
