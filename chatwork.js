@@ -25,10 +25,17 @@ var members = function(){
   $("#_chatText").val(message).change();
 };
 
+// 依頼
+var irai = function(){
+  var message = beforeUserHeader() + "了解しました！\nSS依頼お願いします！";
+  $("#_chatText").val(message).change();
+};
+
 // クリア
 var clearMes = function(){$("#_chatText").val("").change();};
 
 $("#_chatSendToolbar")
   .append('<input type="button" value="全既読" onClick="allRead()"/>')
   .append('<input type="button" value="members" onClick="members()"/>')
+  .append('<input type="button" value="依頼" onClick="irai()"/>')
   .append('<input type="button" value="クリア" onClick="clearMes()"/>');
