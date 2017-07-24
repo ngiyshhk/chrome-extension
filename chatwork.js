@@ -31,6 +31,12 @@ var irai = function(){
   $("#_chatText").val(message).change();
 };
 
+// 明日
+var asu = function(){
+  var message = beforeUserHeader() + "他のタスクとの兼ね合いもあるので、明日になると思っておいてください。\n他のタスクの優先度が下げられるならこちらを優先するので、何を遅らせてよいかお伝えください！";
+  $("#_chatText").val(message).change();
+};
+
 // クリア
 var clearMes = function(){$("#_chatText").val("").change();};
 
@@ -38,4 +44,5 @@ $("#_chatSendToolbar")
   .append('<input type="button" value="全既読" onClick="allRead()"/>')
   .append('<input type="button" value="members" onClick="members()"/>')
   .append('<input type="button" value="依頼" onClick="irai()"/>')
+  .append('<input type="button" value="明日" onClick="asu()"/>')
   .append('<input type="button" value="クリア" onClick="clearMes()"/>');
