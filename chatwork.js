@@ -15,7 +15,6 @@ var allRead = function(){$("#_roomListItems > li").has("li._unreadBadge").each(f
 var members = function(){
   var ids = [
       1129329,
-      1607930,
       2183492,
       1829951,
       2278030,
