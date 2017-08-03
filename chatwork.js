@@ -19,6 +19,7 @@ var members = function(){
       1829951,
       2278030,
       2367510,
+      2576687
     ];
   var message = ids.map(function(id){return "[To:" + id + "]";}).join(" ") + "\n"
   $("#_chatText").val(message).change();
